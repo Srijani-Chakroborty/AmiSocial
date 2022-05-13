@@ -1,0 +1,51 @@
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.logoh{
+   width: 280px;
+   height: 60px;
+   object-fit: cover;
+    cursor: pointer;
+    justify-content: center;
+    display: flex;
+}
+
+.header>a{
+    width: 2vmax;
+    height: 2vmax;
+    margin: 1vmax 4vmax;
+}
+.header>a>svg{
+    font-size: 2vmax;
+    transition: all 0.5s;
+    color: rgba(0,0,0,0.445);
+}
+
+.header>a>svg:hover{
+    color: black;
+    transform: scale(1.2);
+}
+@media screen and (max-width:600px) {
+    .header>a{
+        width: 8vw;
+        height: 8vw;
+        margin: 2vw 8vw;
+        margin-left: 1vw;
+    }
+    .header>a>svg{
+        font-size: 8vw;
+    }
+    .logoh{
+        justify-content: center;
+        width: 180px;
+        height: 45px;
+    }
+    
+    .header>a>svg:hover{
+        color: black;
+        transform: scale(1.2);
+    }
+}
